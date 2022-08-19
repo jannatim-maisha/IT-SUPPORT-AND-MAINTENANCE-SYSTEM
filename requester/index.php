@@ -1,3 +1,3 @@
 <?php 
-echo 'hii anab ki khbr' ;
+echo 'hii anab ki khbr  valo na' ;
  ?>
