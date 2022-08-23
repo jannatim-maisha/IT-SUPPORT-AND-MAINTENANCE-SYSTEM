@@ -49,7 +49,7 @@ user profile
        </a>
       </li>
       <li class="nav-item">
-       <a class="nav-link  " href="Requesterchangepass.php">
+       <a class="nav-link" href="Requesterchangepass.php">
         <i class="fas fa-key"></i>
         Change Password
        </a>
@@ -64,22 +64,17 @@ user profile
     </div>
    </nav>
 
-<div class="col-sm-6 mt-5">
-  <form class="mx-5" method="POST">
-    <div class="form-group">
-      <label for="inputEmail">Email</label>
-      <input type="email" class="form-control" id="inputEmail" value="maisha@gmail.com" readonly>
-    </div>
-    <div class="form-group">
-      <label for="inputName">Name</label>
-      <input type="text" class="form-control" id="inputName" name="rName" value="JMaisha">
-    </div>
-    <button type="submit" class="btn btn-primary" name="nameupdate">Update</button>
-  </form>
 </div>
-</div>
-</div>
-
+<!-- Only Number for input fields -->
+<script>
+  function isInputNumber(evt) {
+    var ch = String.fromCharCode(evt.which);
+    if (!(/[0-9]/.test(ch))) {
+      evt.preventDefault();
+    }
+  }
+</script>
+<!-- Boostrap JavaScript -->
 <script src="../js/jquery.min.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
