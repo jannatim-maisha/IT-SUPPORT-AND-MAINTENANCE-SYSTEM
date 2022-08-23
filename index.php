@@ -73,7 +73,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/3.jpg" class="d-block w-100" alt="...">
+      <img src="images/main.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>WELCOME TO ISMS SERIVCE CENTER</h5>
         <p>Some representative placeholder content for the first slide.</p>
@@ -87,7 +87,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/2.jpg" class="d-block w-100" alt="...">
+      <img src="images/2mm.webp" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>WELCOME TO ISMS SERIVCE CENTER</h5>
         <p>Some representative placeholder content for the second slide.</p>
@@ -101,7 +101,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="images/1.jpg" class="d-block w-100" alt="...">
+      <img src="images/2.1.png" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>WELCOME TO ISMS SERIVCE CENTER</h5>
         <p>Some representative placeholder content for the third slide.</p>
