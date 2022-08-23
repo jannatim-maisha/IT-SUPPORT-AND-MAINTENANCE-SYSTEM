@@ -223,7 +223,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
           <i class="fas fa-key"></i><label for="pass" class="pl-2 font-weight-bold">New
             Password</label><input type="password" class="form-control" placeholder="Password" name="rPassword">
         </div>
-        <button type="submit" class="btn btn-danger mt-5 btn-block shadow-sm font-weight-bold" name="rSignup">Sign Up</button>
+        <button type="submit" class="btn btn-primary mt-5 btn-block shadow-sm font-weight-bold" name="rSignup">Sign Up</button>
         <em style="font-size:10px;">Note - By clicking Sign Up, you agree to our Terms, Data
           Policy and Cookie Policy.</em>
       </form>
