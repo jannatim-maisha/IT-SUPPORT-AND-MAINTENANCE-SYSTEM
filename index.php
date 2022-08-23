@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <!-- Latest compiled and minified CSS -->
+
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Latest compiled JavaScript -->
@@ -16,6 +32,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
     <title>ISMS</title>
+
 </head>
 <body>
     
@@ -41,7 +58,7 @@
           <a class="nav-link" href="#">Services</a>
         </li>
 		 <li class="nav-item">
-          <a class="nav-link" href="#">Registration</a>
+          <a class="nav-link" href="UserRegistration.php">Registration</a>
         </li>
 		 <li class="nav-item">
           <a class="nav-link" href="#">Login</a>
@@ -80,7 +97,7 @@
 		<div  class="slider-btn">
 		
 		<button class="btn btn-1">LogIn</button>
-		<button class="btn btn-2">SignUp</button>
+		<button class="btn btn-2" href="UserRegistration.php">SignUp</button>
 		
 		</div>
 		
@@ -94,7 +111,7 @@
 		<div  class="slider-btn">
 		
 		<button class="btn btn-1">LogIn</button>
-		<button class="btn btn-2">SignUp</button>
+		<button class="btn btn-2" href="UserRegistration.php">SignUp</button>
 		
 		</div>
 		
@@ -109,7 +126,7 @@
 		<div  class="slider-btn">
 		
 		<button class="btn btn-1">LogIn</button>
-		<button class="btn btn-2">SignUp</button>
+		<button class="btn btn-2" href="UserRegistration.php">SignUp</button>
 		
 		</div>
       </div>
@@ -185,10 +202,36 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
       </div>
     </div>
   </div> <!-- End Services -->
+ 
+  <!-- reg -->
+  <div class="container pt-5" id="registration">
+  <h2 class="text-center">Create an Account</h2>
+  <div class="row mt-4 mb-4">
+    <div class="col-md-6 offset-md-3">
+      <form action="" class="shadow-lg p-4" method="POST">
+        <div class="form-group">
+          <i class="fas fa-user"></i><label for="name" class="pl-2 font-weight-bold">Name</label><input type="text"
+            class="form-control" placeholder="Name" name="rName">
+        </div>
+        <div class="form-group">
+          <i class="fas fa-user"></i><label for="email" class="pl-2 font-weight-bold">Email</label><input type="email"
+            class="form-control" placeholder="Email" name="rEmail">
+  
+          <small class="form-text">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <i class="fas fa-key"></i><label for="pass" class="pl-2 font-weight-bold">New
+            Password</label><input type="password" class="form-control" placeholder="Password" name="rPassword">
+        </div>
+        <button type="submit" class="btn btn-danger mt-5 btn-block shadow-sm font-weight-bold" name="rSignup">Sign Up</button>
+        <em style="font-size:10px;">Note - By clicking Sign Up, you agree to our Terms, Data
+          Policy and Cookie Policy.</em>
+      </form>
+    </div>
+  </div>
+</div>
 
-
-
-
+<!-- End reg -->
 
 
 
@@ -198,6 +241,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+ <!-- Boostrap JavaScript -->
+ <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/all.min.js"></script>
 
 </body>
 </html>
