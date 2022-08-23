@@ -20,7 +20,7 @@ user profile
 
 <body>
  <!-- Top Navbar -->
- <nav class="navbar navbar-dark fixed-top bg-danger flex-md-nowrap p-0 shadow">
+ <nav class="navbar navbar-dark fixed-top bg-primary flex-md-nowrap p-0 shadow">
   <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="RequesterProfile.php">ISMS</a>
  </nav>
 
@@ -74,7 +74,7 @@ user profile
       <label for="inputName">Name</label>
       <input type="text" class="form-control" id="inputName" name="rName" value="JMaisha">
     </div>
-    <button type="submit" class="btn btn-danger" name="nameupdate">Update</button>
+    <button type="submit" class="btn btn-primary" name="nameupdate">Update</button>
   </form>
 </div>
 </div>
