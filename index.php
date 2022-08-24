@@ -5,26 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <!-- Latest compiled and minified CSS -->
-
-
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-
-  <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="css/all.min.css">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/custom.css">
-
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,15 +17,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
     <title>ISMS</title>
-
 </head>
 <body>
     
 <!--- Start Navigation ---->
 
-<header class="header">
+<header class="header sticky-md-top">
   
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">ISMS</a>
 	
@@ -55,16 +39,16 @@
           <a class="nav-link acrive" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#Services">Services</a>
         </li>
 		 <li class="nav-item">
-          <a class="nav-link" href="UserRegistration.php">Registration</a>
+          <a class="nav-link" href="#Registration">Registration</a>
         </li>
 		 <li class="nav-item">
           <a class="nav-link" href="#">Login</a>
         </li>
 		 <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#Contact">Contact</a>
         </li>
       
        
@@ -97,7 +81,7 @@
 		<div  class="slider-btn">
 		
 		<button class="btn btn-1">LogIn</button>
-		<button class="btn btn-2" href="UserRegistration.php">SignUp</button>
+		<button class="btn btn-2">SignUp</button>
 		
 		</div>
 		
@@ -111,7 +95,7 @@
 		<div  class="slider-btn">
 		
 		<button class="btn btn-1">LogIn</button>
-		<button class="btn btn-2" href="UserRegistration.php">SignUp</button>
+		<button class="btn btn-2">SignUp</button>
 		
 		</div>
 		
@@ -126,7 +110,7 @@
 		<div  class="slider-btn">
 		
 		<button class="btn btn-1">LogIn</button>
-		<button class="btn btn-2" href="UserRegistration.php">SignUp</button>
+		<button class="btn btn-2">SignUp</button>
 		
 		</div>
       </div>
@@ -152,7 +136,7 @@
 
  
 
-<div class="container">
+<div class="container" >
 
 <div class="mt-4 p-5 bg-primary text-white rounded">
 
@@ -180,6 +164,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </div>
 
+<br>
+<br>
+
 
 
 <!----Introduction End here --------> 
@@ -201,37 +188,272 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <h4 class="mt-4">Fault Repair</h4>
       </div>
     </div>
-  </div> <!-- End Services -->
- 
-  <!-- reg -->
-  <div class="container pt-5" id="registration">
-  <h2 class="text-center">Create an Account</h2>
-  <div class="row mt-4 mb-4">
-    <div class="col-md-6 offset-md-3">
-      <form action="" class="shadow-lg p-4" method="POST">
-        <div class="form-group">
-          <i class="fas fa-user"></i><label for="name" class="pl-2 font-weight-bold">Name</label><input type="text"
-            class="form-control" placeholder="Name" name="rName">
-        </div>
-        <div class="form-group">
-          <i class="fas fa-user"></i><label for="email" class="pl-2 font-weight-bold">Email</label><input type="email"
-            class="form-control" placeholder="Email" name="rEmail">
+  </div> 
   
-          <small class="form-text">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-          <i class="fas fa-key"></i><label for="pass" class="pl-2 font-weight-bold">New
-            Password</label><input type="password" class="form-control" placeholder="Password" name="rPassword">
-        </div>
-        <button type="submit" class="btn btn-primary mt-5 btn-block shadow-sm font-weight-bold" name="rSignup">Sign Up</button>
-        <em style="font-size:10px;">Note - By clicking Sign Up, you agree to our Terms, Data
-          Policy and Cookie Policy.</em>
-      </form>
-    </div>
+  <!-- End Services -->
+
+   <!-- Registration form -->
+
+<div class="container pt-5" id="Registration">
+
+<h2 class="text-center">Create an Account</h2>
+
+<div class="row mt-4 mb-4" >
+  <div class="col-md-6 offset-md-3">
+  <form action=""  class="shadow-lg p-4" method="POST">
+<!-- Name ------->
+  <div class="form-group">
+ <i class="fas fa-user"></i> <label for="name" class="fw-bolder">Name</label>
+ <input type="text"  class="form-control" placeholder="Name"  name="rName">
+
   </div>
+
+  <!-- Email ------->
+
+  <div class="form-group">
+ <i class="fas fa-user"></i> <label for="email" class="fw-bolder">Email</label>
+ <input type="email"  class="form-control" placeholder="Email"  name="rEmail">
+
+ <small class="form-text">We'll never share your email with anyone  else</small>
+
+  </div>
+
+ <!-- Password ------->
+ <div class="form-group">
+ <i class="fas fa-key"></i> <label for="password" class="fw-bolder">New Password</label>
+ <input type="password"  class="form-control" placeholder="Password"  name="rPassword">
+
+  </div>
+  <div class="d-grid gap-2">
+
+  <button type="submit" class="btn btn-danger mt-4  shadow-sm fw-bolder " name="rSign Up">Sign Up</button>
+
+    </div >
+  </form>
+
+  </div>
+
+
 </div>
 
-<!-- End reg -->
+
+</div>
+
+
+
+     <!-- End Registration  -->
+
+
+      <!-- Start Happy Customer  -->
+
+
+<div class="mt-4 p-5 bg-primary text-white rounded">
+
+
+        <div class="container my-3 py-5 text-center">
+
+        <div class="row mb-5">
+
+        <div class="col">
+          <h1>Customer Reviews</h1>
+          <br>
+          <br>
+         <div class="row">
+          <div class="col-lg-3 col-md-3">
+          <div class="card">
+            <div class="card-body bg-dark">
+              <img src="images/a4.jpg" class="img-fluid rounded-circle w-50 mb-3 " alt="">
+              <h3>John Snow</h3>
+              <p>This is very good company 
+                they provide the best services
+                and they are very fast.I will
+                defenitely work with them again
+              </p>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3">
+          <div class="card">
+            <div class="card-body bg-dark">
+              <img src="images/a4.jpg" class="img-fluid rounded-circle w-50 mb-3 " alt="">
+              <h3>John Snow</h3>
+              <p>This is very good company 
+                they provide the best services
+                and they are very fast.I will
+                defenitely work with them again
+              </p>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3">
+          <div class="card">
+            <div class="card-body bg-dark">
+              <img src="images/a4.jpg" class="img-fluid rounded-circle w-50 mb-3 " alt="">
+              <h3>John Snow</h3>
+              <p>This is very good company 
+                they provide the best services
+                and they are very fast.I will
+                defenitely work with them again
+              </p>
+            </div>
+          </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-3">
+          <div class="card">
+            <div class="card-body bg-dark">
+              <img src="images/a4.jpg" class="img-fluid rounded-circle w-50 mb-3 " alt="">
+              <h3>John Snow</h3>
+              <p>This is very good company 
+                they provide the best services
+                and they are very fast.I will
+                defenitely work with them again
+              </p>
+            </div>
+          </div>
+          </div>
+
+
+
+         </div>
+        
+
+        </div>
+        </div>
+       
+
+          
+
+    
+
+        </div>
+            
+      </div>
+
+
+
+         <!-- END Happy Customer  -->
+
+<!-- Start Contact Us  -->
+
+
+<div class="container" id="Contact">
+
+<h2 class="text-center mb-4">Contact Us</h2>
+
+<div class="row">
+
+  <div class="col-md-8">
+ 
+   <form action="" method="POST" >
+    <input type="text" class="form-control" name="name" placeholder="Name"><br>
+    <input type="text" class="form-control" name="subject" placeholder="subject"><br>
+    <input type="emai" class="form-control" name="email" placeholder="email"><br>
+
+    <textarea class="form-control " name="message" placeholder="Enter your message" style="height:150px"></textarea><br>
+
+    <input type="submit" class="btn btn-primary" value="Send" name="Submit"><br><br>
+
+   </form>
+
+  </div>
+  <div class="col-md-4 text-center">
+    <strong>Headquater:</strong><br>
+    ISMS pvt Ltd,<br>
+    123/5 BCS Computer City, Agargaon <br>
+Tel: +8809604442121 (Sales), +8801755513935 (Service)
+
+<br>
+<br>
+<strong>Branch:</strong><br>
+    ISMS pvt Ltd,<br>
+    123/5 BCS Computer City, Agargaon <br>
+Tel: +8809604442121 (Sales), +8801755513935 (Service)
+
+  </div>
+</div>
+</div>
+
+
+<!-- END OF Contact Us  -->
+
+<!-- Start footer  -->
+
+
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container-fluid my-5">
+
+    <footer style="background-color: #deded5;">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">footer content</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+            voluptatem veniam, est atque cumque eum delectus sint!
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">links</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">Frequently Asked Questions</a>
+            </li>
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">Delivery</a>
+            </li>
+            <li class="mb-1">
+              <a href="#!" style="color: #4f4f4f;">Pricing</a>
+            </li>
+            <li>
+              <a href="#!" style="color: #4f4f4f;">Where we deliver?</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-1" style="letter-spacing: 2px; color: #818963;">opening hours</h5>
+          <table class="table" style="color: #4f4f4f; border-color: #666;">
+            <tbody>
+              <tr>
+                <td>Mon - Fri:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Sat - Sun:</td>
+                <td>8am - 1am</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:ISMS LTD
+    
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+</div>
+<!-- End of .container -->
+
+
+<!-- END OF footer  -->
+
+
+
+
+
+  
+
+
+
+
 
 
 
@@ -241,13 +463,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
-
- <!-- Boostrap JavaScript -->
- <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/all.min.js"></script>
 
 </body>
 </html>
