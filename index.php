@@ -197,51 +197,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
    <!-- Registration form -->
 
-<div class="container pt-5" id="Registration">
 
-<h2 class="text-center">Create an Account</h2>
-
-<div class="row mt-4 mb-4" >
-  <div class="col-md-6 offset-md-3">
-  <form action=""  class="shadow-lg p-4" method="POST">
-<!-- Name ------->
-  <div class="form-group">
- <i class="fas fa-user"></i> <label for="name" class="fw-bolder">Name</label>
- <input type="text"  class="form-control" placeholder="Name"  name="rName">
-
-  </div>
-
-  <!-- Email ------->
-
-  <div class="form-group">
- <i class="fas fa-user"></i> <label for="email" class="fw-bolder">Email</label>
- <input type="email"  class="form-control" placeholder="Email"  name="rEmail">
-
- <small class="form-text">We'll never share your email with anyone  else</small>
-
-  </div>
-
- <!-- Password ------->
- <div class="form-group">
- <i class="fas fa-key"></i> <label for="password" class="fw-bolder">New Password</label>
- <input type="password"  class="form-control" placeholder="Password"  name="rPassword">
-
-  </div>
-  <div class="d-grid gap-2">
-
-  <button type="submit" class="btn btn-danger mt-4  shadow-sm fw-bolder " name="rSign Up">Sign Up</button>
-
-    </div >
-  </form>
-
-  </div>
-
-
-</div>
-
-
-</div>
-
+<?php include('UserRegistration.php') ?>
 
 
      <!-- End Registration  -->
@@ -349,20 +306,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div class="row">
 
-  <div class="col-md-8">
- 
-   <form action="" method="POST" >
-    <input type="text" class="form-control" name="name" placeholder="Name"><br>
-    <input type="text" class="form-control" name="subject" placeholder="subject"><br>
-    <input type="emai" class="form-control" name="email" placeholder="email"><br>
-
-    <textarea class="form-control " name="message" placeholder="Enter your message" style="height:150px"></textarea><br>
-
-    <input type="submit" class="btn btn-primary" value="Send" name="Submit"><br><br>
-
-   </form>
-
-  </div>
+<?php include('ContactForm.php') ?>
   <div class="col-md-4 text-center">
     <strong>Headquater:</strong><br>
     ISMS pvt Ltd,<br>

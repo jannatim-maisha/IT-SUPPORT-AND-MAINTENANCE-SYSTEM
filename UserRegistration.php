@@ -11,6 +11,21 @@
 <link rel="stylesheet" href="css/custom.css">
 
  <!-- reg -->
+
+<?php  
+
+
+
+
+
+
+
+
+
+?>
+
+
+
  <div class="container pt-5" id="registration">
   <h2 class="text-center">Create an Account</h2>
   <div class="row mt-4 mb-4">
