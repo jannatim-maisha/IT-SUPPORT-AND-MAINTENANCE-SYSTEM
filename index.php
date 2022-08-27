@@ -197,6 +197,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
    <!-- Registration form -->
 
+<<<<<<< HEAD
+=======
    <?php
   include('UserRegistration.php');
   ?>
@@ -246,7 +248,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 </div> -->
+>>>>>>> 4a761e5e5f64bf5b68765a9ca7a1f162a48c09a9
 
+<?php include('UserRegistration.php') ?>
 
 
      <!-- End Registration  -->
@@ -354,20 +358,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div class="row">
 
-  <div class="col-md-8">
- 
-   <form action="" method="POST" >
-    <input type="text" class="form-control" name="name" placeholder="Name"><br>
-    <input type="text" class="form-control" name="subject" placeholder="subject"><br>
-    <input type="emai" class="form-control" name="email" placeholder="email"><br>
-
-    <textarea class="form-control " name="message" placeholder="Enter your message" style="height:150px"></textarea><br>
-
-    <input type="submit" class="btn btn-primary" value="Send" name="Submit"><br><br>
-
-   </form>
-
-  </div>
+<?php include('ContactForm.php') ?>
   <div class="col-md-4 text-center">
     <strong>Headquater:</strong><br>
     ISMS pvt Ltd,<br>
