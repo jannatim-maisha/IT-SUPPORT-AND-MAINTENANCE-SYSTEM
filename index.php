@@ -141,7 +141,7 @@
 
 <div class="container" >
 
-<div class="mt-4 p-5 bg-primary text-white rounded">
+<div class="mt-4 p-5 bg-dark text-light rounded">
 
 <h1 class="text-center">About US</h1>
 
@@ -250,7 +250,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
       <!-- Start Happy Customer  -->
 
 
-<div class="mt-4 p-5 bg-primary text-white rounded">
+<div class="mt-4 p-5 bg-secondary text-white rounded">
 
 
         <div class="container my-3 py-5 text-center">
