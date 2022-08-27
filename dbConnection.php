@@ -20,12 +20,12 @@ if($conn->connect_error){
 
 
 die("connection failed");
-
-}else {
-
-
-    echo "Connect";
 }
+// }else {
+
+
+//     echo "Connect";
+// }
 
 
 
