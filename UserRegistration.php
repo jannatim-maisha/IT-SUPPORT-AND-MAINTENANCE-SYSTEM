@@ -1,34 +1,17 @@
- <!-- Bootstrap CSS -->
- <link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
 
 <!-- Font Awesome CSS -->
 <link rel="stylesheet" href="css/all.min.css">
 
 <!-- Google Font -->
-<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu
+" rel="stylesheet">
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="css/custom.css">
 
  <!-- reg -->
-<<<<<<< HEAD
-
-<?php  
-
-
-
-
-
-
-
-
-
-?>
-
-
-
- <div class="container pt-5" id="registration">
-=======
  <?php
   include('dbConnection.php');
 
@@ -58,7 +41,6 @@
 ?> 
 
  <div class="container pt-5" id="Registration">
->>>>>>> 4a761e5e5f64bf5b68765a9ca7a1f162a48c09a9
   <h2 class="text-center">Create an Account</h2>
   <div class="row mt-4 mb-4">
     <div class="col-md-6 offset-md-3">

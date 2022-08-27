@@ -197,11 +197,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
    <!-- Registration form -->
 
-<<<<<<< HEAD
-=======
-   <?php
-  include('UserRegistration.php');
-  ?>
+
+ 
 
 <!-- <div class="container pt-5" id="Registration">
 
@@ -247,7 +244,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 </div> -->
->>>>>>> 4a761e5e5f64bf5b68765a9ca7a1f162a48c09a9
+
 
 <?php include('UserRegistration.php') ?>
 
