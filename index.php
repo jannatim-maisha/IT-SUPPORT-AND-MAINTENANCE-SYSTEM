@@ -50,6 +50,9 @@
 		 <li class="nav-item">
           <a class="nav-link" href="#Contact">Contact</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contact">Shop Now</a>
+        </li>
       
        
       </ul>
