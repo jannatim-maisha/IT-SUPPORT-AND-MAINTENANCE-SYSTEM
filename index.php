@@ -45,7 +45,7 @@
           <a class="nav-link" href="#Registration">Registration</a>
         </li>
 		 <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link" href="requester/RequesterLogin.php">Login</a>
         </li>
 		 <li class="nav-item">
           <a class="nav-link" href="#Contact">Contact</a>
@@ -201,6 +201,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   include('UserRegistration.php');
   ?>
 
+
 <!-- <div class="container pt-5" id="Registration">
 
 <h2 class="text-center">Create an Account</h2>
@@ -213,7 +214,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
  <i class="fas fa-user"></i> <label for="name" class="fw-bolder">Name</label>
  <input type="text"  class="form-control" placeholder="Name"  name="rName"> -->
 
-  </div>
+  <!-- </div> -->
 
   <!-- Email ------->
 
@@ -223,7 +224,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
  <small class="form-text">We'll never share your email with anyone  else</small> -->
 
-  </div>
+  <!-- </div> -->
 
  <!-- Password ------->
  <!-- <div class="form-group">
