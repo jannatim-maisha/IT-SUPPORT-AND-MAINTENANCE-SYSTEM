@@ -1,3 +1,84 @@
+
+<?php
+define('TITLE','Requester Profile');
+define('PAGE','SubmitRequest');
+include('../dbConnection.php');
+session_start();
+if($_SESSION['is_login']){
+$rEmail = $_SESSION['rEmail'];
+}
+
+else{
+
+echo "<script> location.href='RequesterLogin.php'</script>";
+
+}
+
+if(isset($_REQUEST['submitrequest'])){
+
+// chekcing for empty fields
+
+if(($_REQUEST['requestinfo']=="")||($_REQUEST['requestdesc']=="")||($_REQUEST['requestername']=="")
+||($_REQUEST['requesteradd1']=="")||($_REQUEST['requesteradd2']=="")||($_REQUEST['requestercity']=="")
+||($_REQUEST['requesterzip']=="")||($_REQUEST['requesteremail']=="")||($_REQUEST['requestermobile']=="")
+||($_REQUEST['requestdate']=="")){
+
+$msg="<div class='alert alert-warning col-sm-6 ml-5 mt-2'>PLZ FILL UP ALL THE FIELDS</div>";
+
+
+
+}
+
+else{
+
+
+  $rinfo = $_REQUEST['requestinfo'];
+  $rdesc=$_REQUEST['requestdesc'];
+  $rname=$_REQUEST['requestername'];
+  $radd1=$_REQUEST['requesteradd1'];
+  $radd2=$_REQUEST['requesteradd2'];
+  $rcity=$_REQUEST['requestercity'];
+  $rstate=$_REQUEST['requesterstate'];
+  $rzip=$_REQUEST['requesterzip'];
+  $remail=$_REQUEST['requesteremail'];
+  $rmobile=$_REQUEST['requestermobile'];
+  $rdate=$_REQUEST['requestdate'];
+
+  $sql= "INSERT INTO submitrequest_tb (request_info,request_desc,requester_name,requester_add1,
+  requester_add2,requester_city,requester_state,requester_zip,requester_email,requester_mobile,request_date )
+  VALUES ('$rinfo','$rdesc','$rname','$radd1','$radd2','$rcity','$rstate','$rzip','$remail','$rmobile','$rdate')";
+
+
+  if($conn->query($sql) == TRUE){
+
+    $genid= mysqli_insert_id($conn);
+
+
+    $msg="<div class='alert alert-warning col-sm-6 ml-5 mt-2'>Request Submitted succesfully</div>";
+
+    $_SESSION['myid']=$genid;
+    echo "<script> location.href='submitrequestsuccess.php'</script>";
+  }
+
+  else{
+
+$msg="<div class='alert alert-warning col-sm-6 ml-5 mt-2'>Unable to submit</div>";
+
+  }
+
+
+
+
+}
+
+
+
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,9 +87,11 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <title>
-user profile
+<?php  echo TITLE ?>
  </title>
  <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
  <link rel="stylesheet" href="../css/bootstrap.min.css">
 
  <!-- Font Awesome CSS -->
@@ -55,7 +138,7 @@ user profile
        </a>
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="#">
+       <a class="nav-link" href="../logout.php">
         <i class="fas fa-sign-out-alt"></i>
         Logout
        </a>
@@ -122,6 +205,8 @@ user profile
     <button type="submit" class="btn btn-primary" name="submitrequest">Submit</button>
     <button type="reset" class="btn btn-secondary">Reset</button>
   </form>
+<?php  if(isset($msg)) {echo $msg;}?>
+
 </div>
 </div>
 </div>

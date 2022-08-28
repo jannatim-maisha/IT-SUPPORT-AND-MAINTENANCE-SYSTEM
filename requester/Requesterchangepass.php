@@ -1,3 +1,57 @@
+<?php
+define('TITLE','Password');
+include('../dbConnection.php');
+session_start();
+if($_SESSION['is_login']){
+$rEmail = $_SESSION['rEmail'];
+}
+
+else{
+
+echo "<script> location.href='RequesterLogin.php'</script>";
+
+}
+$rEmail = $_SESSION['rEmail'];
+
+if(isset($_REQUEST['passupdate'])){
+
+if($_REQUEST['rPassword']==""){
+
+
+$passmsg='<div class="alert alert-warning col-sm-6  ml-5 mt-2">Fill up the Change password field</div>';
+
+}
+
+else{
+  $rPass=$_REQUEST['rPassword'];
+
+  $sql = "update requesterlogin_tb set r_password='$rPass'where r_email='$rEmail'";
+  
+  if($conn->query($sql)==TRUE){
+  
+    $passmsg='<div class="alert alert-warning col-sm-6  ml-5 mt-2">Password Updated Succesfully</div>';
+  
+  
+  
+  }
+  else{
+  
+    $passmsg='<div class="alert alert-warning col-sm-6  ml-5 mt-2">Unable to  the Change password field</div>';
+  
+  }
+
+}
+
+
+
+}
+
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +60,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <title>
-user profile
+ <?php  echo TITLE ?>
  </title>
  <!-- Bootstrap CSS -->
  <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -55,7 +109,7 @@ user profile
        </a>
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="#">
+       <a class="nav-link" href="../logout.php">
         <i class="fas fa-sign-out-alt"></i>
         Logout
        </a>
@@ -72,7 +126,7 @@ user profile
       <form class="mt-5 mx-5" method="POST">
         <div class="form-group">
           <label for="inputEmail">Email</label>
-          <input type="email" class="form-control" id="inputEmail" value=" " readonly>
+          <input type="email" class="form-control" id="inputEmail" value="<?php  echo $rEmail ;?> " readonly>
         </div>
         <div class="form-group">
           <label for="inputnewpassword">New Password</label>
@@ -82,6 +136,8 @@ user profile
         <button type="reset" class="btn btn-secondary mt-4">Reset</button>
         
       </form>
+
+      <?php if(isset($passmsg)){echo $passmsg;}?>
 
     </div>
 

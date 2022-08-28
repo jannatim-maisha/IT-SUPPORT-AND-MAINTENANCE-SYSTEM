@@ -1,12 +1,3 @@
-
-<?php
-define('TITLE','Status');
-include('../dbConnection.php');
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,9 +6,12 @@ include('../dbConnection.php');
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <title>
- <?php  echo TITLE ?>
+user profile
  </title>
  <!-- Bootstrap CSS -->
+
+ 
+
  <link rel="stylesheet" href="../css/bootstrap.min.css">
 
  <!-- Font Awesome CSS -->
@@ -58,7 +52,7 @@ include('../dbConnection.php');
        </a>
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="Requesterchangepass.php">
+       <a class="nav-link  " href="Requesterchangepass.php">
         <i class="fas fa-key"></i>
         Change Password
        </a>
@@ -75,14 +69,7 @@ include('../dbConnection.php');
 
 </div>
 <!-- Only Number for input fields -->
-<script>
-  function isInputNumber(evt) {
-    var ch = String.fromCharCode(evt.which);
-    if (!(/[0-9]/.test(ch))) {
-      evt.preventDefault();
-    }
-  }
-</script>
+
 <!-- Boostrap JavaScript -->
 <script src="../js/jquery.min.js"></script>
 <script src="../js/popper.min.js"></script>

@@ -51,7 +51,10 @@
           <a class="nav-link" href="#Contact">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Contact">Shop Now</a>
+          <a class="nav-link" href="#Contact">Shop </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Admin/login.php">Admin </a>
         </li>
       
        
