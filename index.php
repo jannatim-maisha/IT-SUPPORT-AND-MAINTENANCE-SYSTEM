@@ -51,10 +51,7 @@
           <a class="nav-link" href="#Contact">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Contact">Shop </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Admin/login.php">Admin </a>
+          <a class="nav-link" href="#Contact">Shop Now</a>
         </li>
       
        
@@ -200,8 +197,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
    <!-- Registration form -->
 
-
- 
+   <?php
+  include('UserRegistration.php');
+  ?>
 
 
 <!-- <div class="container pt-5" id="Registration">
