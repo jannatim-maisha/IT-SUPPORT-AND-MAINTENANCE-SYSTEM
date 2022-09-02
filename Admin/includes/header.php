@@ -1,12 +1,3 @@
-
-
-<?php
-define('TITLE', 'Dashboard');
-define('PAGE', 'dashboard');
-include('../dbConnection.php');
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +6,7 @@ include('../dbConnection.php');
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <title>
-  dashboard
+  <?php echo TITLE ?>
  </title>
  <!-- Bootstrap CSS -->
  <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -31,7 +22,7 @@ include('../dbConnection.php');
 <body>
  <!-- Top Navbar -->
  <nav class="navbar navbar-dark fixed-top bg-primary p-0 shadow">
-  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="dashboard.php">OSMS</a>
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="dashboard.php">ISMS</a>
  </nav>
 
  <!-- Side Bar -->
@@ -103,25 +94,3 @@ include('../dbConnection.php');
      </ul>
     </div>
    </nav>
-
- 
-
-
-
-
-
-
-
-
-   <!-- Boostrap JavaScript -->
-<script src="../js/jquery.min.js"></script>
-<script src="../js/popper.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/all.min.js"></script>
-<script src="../js/custom.js"></script>
-</body>
-
-</html>
-</body>
-
-</html>
