@@ -93,7 +93,7 @@ session_start();
        </a>
       </li>
       <li class="nav-item">
-       <a class="nav-link <?php if(PAGE == 'requesters') { echo 'active'; } ?>" href="requester.php">
+       <a class="nav-link <?php if(PAGE == 'requesters') { echo 'active'; } ?>" href="requesters.php">
         <i class="fas fa-users"></i>
         Requester
        </a>
