@@ -160,7 +160,7 @@ $msg="<div class='alert alert-warning col-sm-6 ml-5 mt-2'>Unable to submit</div>
     </div>
     <div class="form-group">
       <label for="inputName">Name</label>
-      <input type="text" class="form-control" id="inputName" placeholder="mara khawa user" name="requestername">
+      <input type="text" class="form-control" id="inputName"  name="requestername" placeholder="write your name">
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
@@ -169,7 +169,7 @@ $msg="<div class='alert alert-warning col-sm-6 ml-5 mt-2'>Unable to submit</div>
       </div>
       <div class="form-group col-md-6">
         <label for="inputAddress2">Address Line 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="somewhere" name="requesteradd2">
+        <input type="text" class="form-control" id="inputAddress2" placeholder="" name="requesteradd2">
       </div>
     </div>
     <div class="form-row">
@@ -190,7 +190,7 @@ $msg="<div class='alert alert-warning col-sm-6 ml-5 mt-2'>Unable to submit</div>
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputEmail">Email</label>
-        <input type="email" class="form-control" id="inputEmail" name="requesteremail">
+        <input type="email" class="form-control" id="inputEmail" name="requesteremail" value=" <?php echo $rEmail ?>" readonly>
       </div>
       <div class="form-group col-md-2">
         <label for="inputMobile">Mobile</label>
