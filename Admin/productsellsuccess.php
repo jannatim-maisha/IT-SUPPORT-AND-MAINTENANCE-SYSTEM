@@ -1,8 +1,6 @@
-
-
 <?php
 define('TITLE', 'Dashboard');
-define('PAGE', 'dashboard');
+define('PAGE', 'assets');
 include('../dbConnection.php');
 
 session_start();
@@ -11,23 +9,8 @@ session_start();
  } else {
   echo "<script> location.href='login.php'; </script>";
  }
- $sql = "SELECT max(request_id) FROM submitrequest_tb";
- $result = $conn->query($sql);
- $row = mysqli_fetch_row($result);
- $submitrequest = $row[0];
-
- $sql = "SELECT max(request_id) FROM assignwork_tb";
- $result = $conn->query($sql);
- $row = mysqli_fetch_row($result);
- $assignwork = $row[0];
-
- $sql = "SELECT * FROM technician_tb";
- $result = $conn->query($sql);
- $totaltech = $result->num_rows;
-
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +20,7 @@ session_start();
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <title>
-  dashboard
+Sell Success
  </title>
  <!-- Bootstrap CSS -->
  <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -126,79 +109,68 @@ session_start();
     </div>
    </nav>
 
-  <div class="col-sm-9 col-md-10">
-  <div class="row mx-5 text-center">
-    <div class="col-sm-4 mt-5">
-      <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-        <div class="card-header">Requests Received</div>
-        <div class="card-body">
-          <h4 class="card-title">
-            <?php echo $submitrequest; ?>
-          </h4>
-          <a class="btn text-white" href="request.php">View</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 mt-5">
-      <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-        <div class="card-header">Assigned Work</div>
-        <div class="card-body">
-          <h4 class="card-title">
-            <?php echo $assignwork; ?>
-          </h4>
-          <a class="btn text-white" href="work.php">View</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 mt-5">
-      <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-        <div class="card-header">No. of Technician</div>
-        <div class="card-body">
-          <h4 class="card-title">
-            <?php echo $totaltech; ?>
-          </h4>
-          <a class="btn text-white" href="technician.php">View</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="mx-5 mt-5 text-center">
-    <!--Table-->
-    <p class=" bg-dark text-white p-2">List of Requesters</p>
 
-    <?php
-    $sql = "SELECT * FROM requesterlogin_tb";
-    $result = $conn->query($sql);
-    if($result->num_rows > 0){
- echo '<table class="table">
-  <thead>
+
+
+ <?php
+ $sql = "SELECT * FROM customer_tb WHERE custid = {$_SESSION['myid']}";
+ $result = $conn->query($sql);
+ if($result->num_rows == 1){
+  $row = $result->fetch_assoc();
+  echo "<div class='ml-5 mt-5'>
+  <h3 class='text-center'>Customer Bill</h3>
+  <table class='table'>
+   <tbody>
    <tr>
-    <th scope="col">Requester ID</th>
-    <th scope="col">Name</th>
-    <th scope="col">Email</th>
+     <th>Customer ID</th>
+     <td>".$row['custid']."</td>
    </tr>
-  </thead>
-  <tbody>';
-  while($row = $result->fetch_assoc()){
-   echo '<tr>';
-    echo '<th scope="row">'.$row["r_login_id"].'</th>';
-    echo '<td>'. $row["r_name"].'</td>';
-    echo '<td>'.$row["r_email"].'</td>';
-  }
- echo '</tbody>
- </table>';
-} else {
-  echo "0 Result";
-}
-?>
+    <tr>
+      <th>Customer Name</th>
+      <td>".$row['custname']."</td>
+    </tr>
+    <tr>
+      <th>Address</th>
+      <td>".$row['custadd']."</td>
+    </tr>
+    <tr>
+    <th>Product</th>
+    <td>".$row['cpname']."</td>
+   </tr>
+    <tr>
+     <th>Quantity</th>
+     <td>".$row['cpquantity']."</td>
+    </tr>
+    <tr>
+     <th>Price Each</th>
+     <td>".$row['cpeach']."</td>
+    </tr>
+    <tr>
+     <th>Total Cost</th>
+     <td>".$row['cptotal']."</td>
+    </tr>
+    <tr>
+    <th>Date</th>
+    <td>".$row['cpdate']."</td>
+   </tr>
+    <tr>
+     <td><form class='d-print-none'><input class='btn btn-info' type='submit' value='Print' onClick='window.print()'></form></td>
+     <td><a href='assets.php' class='btn btn-secondary d-print-none'>Close</a></td>
+   </tr>
+   </tbody>
+  </table> </div>
+  ";
+ 
+ } else {
+   echo "Failed";
+ }
+
+ ?>
 
 
 
 
 
-
-
-   <!-- Boostrap JavaScript -->
 <script src="../js/jquery.min.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
