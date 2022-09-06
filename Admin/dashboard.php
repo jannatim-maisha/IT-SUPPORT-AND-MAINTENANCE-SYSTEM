@@ -99,7 +99,7 @@ session_start();
        </a>
       </li>
       <li class="nav-item">
-       <a class="nav-link <?php if(PAGE == 'sellreport') { echo 'active'; } ?>" href="soldproductreport.php">
+       <a class="nav-link <?php if(PAGE == 'sellreport') { echo 'active'; } ?>" href="sellreport.php">
         <i class="fas fa-table"></i>
         Sell Report
        </a>
