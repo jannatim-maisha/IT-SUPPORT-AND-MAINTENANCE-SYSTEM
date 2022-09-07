@@ -7,6 +7,10 @@ if(isset($_SESSION['is_adminlogin'])){
 } else {
  echo "<script> location.href='login.php'; </script>";
 }
+
+?>
+
+<?php
  if(isset($_REQUEST['view'])){
   $sql = "SELECT * FROM submitrequest_tb WHERE request_id = {$_REQUEST['id']}";
  $result = $conn->query($sql);
