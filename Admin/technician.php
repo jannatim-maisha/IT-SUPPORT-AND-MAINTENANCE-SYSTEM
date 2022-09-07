@@ -62,7 +62,7 @@ echo '</form>';
 
 
 echo '<form  action="" method="POST" class="d-inline">';
-echo ' <input type="hidden" name="id" value='.$row["empid"].'><button type="submit" class="btn btn-warning mr-3" name="delete" value="Delete">
+echo ' <input type="hidden" name="id" value='.$row["empid"].'><button type="submit" class="btn btn-danger mr-3" name="delete" value="Delete">
 
 <i class="far fa-trash-alt"></i></button>';
 echo '</form>';
@@ -154,7 +154,7 @@ echo '</tbody>';
 
 
 
-<div class="float-right" ><a href="insertemp.php" class="btn btn-danger"><i class="fas fa-plus fa-2x"></i></a></div>
+<div class="float-right" ><a href="insertemp.php" class="btn btn-primary"><i class="fas fa-plus fa-2x"></i></a></div>
 
 </div>
 <script src="../js/jquery.min.js"></script>
