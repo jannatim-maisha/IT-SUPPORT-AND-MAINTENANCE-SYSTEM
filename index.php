@@ -12,6 +12,8 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="style.css" > 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
@@ -308,7 +310,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 
-<div class="mt-4 p-5 bg-secondary text-white rounded">
+<!-- <div class="mt-4 p-5 bg-secondary text-white rounded">
 
 
         <div class="container my-3 py-5 text-center">
@@ -394,20 +396,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
             
       </div>
 
-
+ -->
 
          <!-- END Happy Customer  -->
 
 <!-- Start Contact Us  -->
 
 
-<div class="container" id="Contact">
+<!-- <div class="container" id="Contact">
 
 <h2 class="text-center mb-4">Contact Us</h2>
 
 <div class="row">
 
-<?php include('ContactForm.php') ?>
+<?php //include('ContactForm.php') ?>
   <div class="col-md-4 text-center">
     <strong>Headquater:</strong><br>
     ISMS pvt Ltd,<br>
@@ -423,10 +425,107 @@ Tel: +8809604442121 (Sales), +8801755513935 (Service)
 
   </div>
 </div>
-</div>
+</div> -->
 
 
 <!-- END OF Contact Us  -->
+
+
+
+
+<!--contact us ass3 marlam -->
+
+
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-6 image-container">
+
+                <div class="icon-contain my-3 py-5">
+                    <div class="icon-holder">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>  <strong>Headquater:</strong><br>
+    ISMS pvt Ltd,<br>
+    123/5 BCS Computer City, Agargaon <br></p>
+                        </div>
+                    </div>
+                    <div class="icon-holder">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Lets Talk</h3>
+                            <p><a href="tel:+8801755513935"> +8809604442121 (Sales), +8801755513935 (Service)</a></p>
+                        </div>
+                    </div>
+                    <div class="icon-holder">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>General Support</h3>
+                            <p><a href="mailto:isms@gmail.com">isms@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="col-md-6 form-container">
+            <div class="message">
+                Send Us a Message
+            </div>
+
+            <form action="data.php" method="POST">
+                <div class="field name-container">
+                    <label for="first-name">TELL US YOUR NAME<span class="required-mark">*</span></label>
+                    <div class="field-name">
+                        <input type="text" id="first-name" name="usernamefirst" value=""
+                            class="form-control first-name" placeholder="First name" required />
+                        <input type="text" id="last-name" name="usernamesecond" value=""
+                            class="form-control last-name" placeholder="Last name" required />
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="email">ENTER YOUR EMAIL<span class="required-mark">*</span></label>
+                    <input type="email" id="email" name="email" value="" class="form-control"
+                        placeholder="Eg. example@email.com" required />
+                </div>
+                <div class="field">
+                    <label for="phone">ENTER PHONE NUMBER<span class="required-mark">*</span></label>
+                    <input type="tel" id="phone" name="phone" value="" class="form-control"
+                        placeholder="Eg. +1 800 0000000" pattern="[0-9/+]{12}" required />
+                </div>
+                <div class="field">
+                    <label for="textarea">MESSAGE<span class="required-mark">*</span></label>
+                    <textarea id="textarea" rows="4" class="form-control textarea" name="message"
+                        placeholder="Write us a message" required></textarea>
+                </div>
+                <div class="btnlast">
+                    <input type="submit" class="button" value="SEND MESSAGE" />
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+ 
+
+
+<!-- sesh  -->
+
+
+
+
+
+
+
+
 
 <!-- Start footer  -->
 
@@ -494,7 +593,7 @@ Tel: +8809604442121 (Sales), +8801755513935 (Service)
 
 
  <!-- Start of 2nd Footer-->
- <footer class="container-fluid bg-dark text-white mt-5" style="border-top: 3px solid #DC3545;">
+ <footer class="container-fluid  bg-dark text-white mt-5" style="border-top: 3px solid #DC3545;">
     <div class="container">
       <!-- Start Footer Container -->
       <div class="row py-3">
