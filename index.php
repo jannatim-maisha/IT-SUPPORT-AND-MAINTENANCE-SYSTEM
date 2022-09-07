@@ -437,7 +437,7 @@ Tel: +8809604442121 (Sales), +8801755513935 (Service)
 
 
 
-    <div class="container-fluid">
+    <div class="container-fluid "id="Contact">
 
         <div class="row">
             <div class="col-md-6 image-container">
