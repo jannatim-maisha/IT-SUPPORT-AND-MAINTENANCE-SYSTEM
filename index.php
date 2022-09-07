@@ -20,49 +20,36 @@
 </head>
 <body>
     
-<!--- Start Navigation ---->
+<!--- Start Navigation   hi---->
 
-<header class="header sticky-md-top">
+<nav class="navbar navbar-expand-sm  navbar-dark bg-dark pl-8 fixed-top">
+
+<a href="index.php" class="navbar-brand">ISMS</a>
+
+
+
+<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mymenu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="mymenu">
+  <ul class="navbar-nav pl-5 custom-nav ">
   
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">ISMS</a>
-	
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span ></span>
-	   <span ></span>
-	    <span ></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-between " id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-        <li class="nav-item ">
-          <a class="nav-link acrive" aria-current="page" href="index.php">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Services">Services</a>
-        </li>
-		 <li class="nav-item">
-          <a class="nav-link" href="#Registration">Registration</a>
-        </li>
-		 <li class="nav-item">
-          <a class="nav-link" href="requester/RequesterLogin.php">Login</a>
-        </li>
-		 <li class="nav-item">
-          <a class="nav-link" href="#Contact">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Contact">Shop Now</a>
-        </li>
-      
-       
-      </ul>
-     
-    </div>
-  </div>
+  <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+  <li class="nav-item"><a href="#Services" class="nav-link">Services</a></li>
+  <li class="nav-item"><a href="#Registration" class="nav-link">Registration</a></li>
+  <li class="nav-item"><a href="requester/RequesterLogin.php" class="nav-link">Login</a></li>
+  <li class="nav-item"><a href="#Contact" class="nav-link">Contact </a></li>
+  
+
+
+  </ul>
+</div>
+
+
 </nav>
-  
-  </header>
-
 <!--- end of navigation -----> 
 
 <!----slider --------> 
@@ -72,33 +59,31 @@
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-label="Slide 1"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="images/main.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>WELCOME TO ISMS SERIVCE CENTER</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <p>Our Aim To Fullfill the Customer Satisfaction</p>
 		<div  class="slider-btn">
 		
-		<button class="btn btn-1">LogIn</button>
-		<button class="btn btn-2">SignUp</button>
+	
 		
 		</div>
 		
       </div>
     </div>
-    <div class="carousel-item">
+    <!-- < <div class="carousel-item">
       <img src="images/2mm.webp" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>WELCOME TO ISMS SERIVCE CENTER</h5>
         <p>Some representative placeholder content for the second slide.</p>
 		<div  class="slider-btn">
 		
-		<button class="btn btn-1">LogIn</button>
-		<button class="btn btn-2">SignUp</button>
+	
 		
 		</div>
 		
@@ -111,9 +96,8 @@
         <p>Some representative placeholder content for the third slide.</p>
 		
 		<div  class="slider-btn">
-		
-		<button class="btn btn-1">LogIn</button>
-		<button class="btn btn-2">SignUp</button>
+		 -->
+	
 		
 		</div>
       </div>
@@ -496,10 +480,7 @@ Tel: +8809604442121 (Sales), +8801755513935 (Service)
         </div>
       </div>
     </div>
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2022 Copyright:ISMS LTD
-    
-    </div>
+ 
     <!-- Copyright -->
   </footer>
   
