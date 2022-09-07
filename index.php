@@ -255,6 +255,74 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
       <!-- Start Happy Customer  -->
 
+<!-- Start Happy Customer  -->
+<div class="jumbotron bg-secondary" id="Customer">
+    <!-- Start Happy Customer Jumbotron -->
+    <div class="container">
+      <!-- Start Customer Container -->
+      <h2 class="text-center text-white">Happy Customers</h2>
+      <div class="row mt-5">
+        <div class="col-lg-3 col-sm-6">
+          <!-- Start Customer 1st Column-->
+          <div class="card shadow-lg mb-2">
+            <div class="card-body text-center bg-dark">
+              <img src="images/avtar1.jpeg" class="img-fluid" style="border-radius: 100px;">
+              <h4 class="card-title text-white">Rahat Khan</h4>
+              <p class="card-text text-white">This is very good company 
+                they provide the best services
+                and they are very fast.I will
+                defenitely work with them again.</p>
+            </div>
+          </div>
+        </div> <!-- End Customer 1st Column-->
+
+        <div class="col-lg-3 col-sm-6">
+          <!-- Start Customer 2nd Column-->
+          <div class="card shadow-lg mb-2">
+            <div class="card-body text-center bg-dark">
+              <img src="images/avtar2.jpeg" class="img-fluid" style="border-radius: 100px;">
+              <h4 class="card-title text-white">Sonali Sharkar</h4>
+              <p class="card-text text-white">This is very good company 
+                they provide the best services
+                and they are very fast.I will
+                defenitely work with them again.</p>
+            </div>
+          </div>
+        </div> <!-- End Customer 2nd Column-->
+
+        <div class="col-lg-3 col-sm-6">
+          <!-- Start Customer 3rd Column-->
+          <div class="card shadow-lg mb-2">
+            <div class="card-body text-center bg-dark" >
+              <img src="images/avtar3.jpeg" class="img-fluid" style="border-radius: 100px;">
+              <h4 class="card-title text-white">Sojib kumar</h4>
+              <p class="card-text text-white">This is very good company 
+                they provide the best services
+                and they are very fast.I will
+                defenitely work with them again.</p>
+            </div>
+          </div>
+        </div> <!-- End Customer 3rd Column-->
+
+        <div class="col-lg-3 col-sm-6">
+          <!-- Start Customer 4th Column-->
+          <div class="card shadow-lg mb-2">
+            <div class="card-body text-center bg-dark">
+              <img src="images/avtar4.jpeg" class="img-fluid" style="border-radius: 100px;">
+              <h4 class="card-title text-white">Jyoti Rahman</h4>
+              <p class="card-text text-white">This is very good company 
+                they provide the best services
+                and they are very fast.I will
+                defenitely work with them again</p>
+            </div>
+          </div>
+        </div> <!-- End Customer 4th Column-->
+      </div> <!-- End Customer Row-->
+    </div> <!-- End Customer Container -->
+  </div> <!-- End Customer Jumbotron -->
+
+
+
 
 <div class="mt-4 p-5 bg-secondary text-white rounded">
 
