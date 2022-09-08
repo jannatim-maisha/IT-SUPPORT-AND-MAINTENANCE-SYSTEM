@@ -9,6 +9,8 @@ session_start();
  } else {
   echo "<script> location.href='login.php'; </script>";
  }
+ ?>
+ <?php
  if(isset($_REQUEST['psubmit'])){
 
   if(($_REQUEST['cname'] == "") || ($_REQUEST['cadd'] == "") || ($_REQUEST['pname'] == "") || ($_REQUEST['pquantity'] == "") || ($_REQUEST['psellingcost'] == "") || ($_REQUEST['totalcost'] == "") || ($_REQUEST['selldate'] == "")){

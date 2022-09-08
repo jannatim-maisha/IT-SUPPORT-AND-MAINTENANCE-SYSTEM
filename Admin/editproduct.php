@@ -9,6 +9,8 @@ session_start();
  } else {
   echo "<script> location.href='login.php'; </script>";
  }
+ ?>
+ <?php
  // update
  if(isset($_REQUEST['pupdate'])){
   
